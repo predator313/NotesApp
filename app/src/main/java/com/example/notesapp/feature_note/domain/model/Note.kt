@@ -1,5 +1,6 @@
 package com.example.notesapp.feature_note.domain.model
 
+import androidx.lifecycle.ViewModel
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.notesapp.ui.theme.BabyBlue
@@ -22,3 +23,5 @@ data class Note(
         val noteColors= listOf(RedOrange, RedPink, Violet, BabyBlue, LightGreen)
     }
 }
+class InvalidNoteException( message:String):Exception(message)
+
