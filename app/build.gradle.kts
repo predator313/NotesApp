@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.notesapp.HiltTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -126,4 +126,5 @@ dependencies {
     androidTestImplementation ("com.squareup.okhttp3:mockwebserver:4.9.1")
     androidTestImplementation ("io.mockk:mockk-android:1.10.5")
     androidTestImplementation ("androidx.test:runner:1.5.2")
+    androidTestImplementation ("com.linkedin.dexmaker:dexmaker-mockito:2.28.3")
 }
